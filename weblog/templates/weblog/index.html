@@ -1,0 +1,1291 @@
+{% extends 'parent/base.html' %}
+{% load static %}
+{% block title %}خانه{% endblock %}
+{% block content %}
+
+    <!--  Pre Loader  -->
+    <div id="overlayer"></div>
+    <span class="loader"></span>
+
+
+    <!-- Portfolio Single Modal Start -->
+    <div class="portfolio-single modal fade" id="portfolio-single" tabindex="-1" role="dialog" aria-labelledby="portfolioModalScrollable" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content text-muted">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="portfolioModalScrollable">کارهای من</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="pt-4 pb-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-10 mx-auto">
+                                    <div class="text-center">
+                                        <h2 class="mb-3">تک صفحه <span class="base-color"> نمونه کار</span></h2>
+                                        <p class="max-width-450">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    </div>
+                                    <div class="row contact-info mt-5">
+                                        <div class="col-md-4">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6>ساخته شده توسط :</h6>
+                                                    <p class="mb-0">مریم امیری</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 p-title-border mt-3 mt-md-0">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6 class="contact_detail-title">تاریخ اتمام پروژه :</h6>
+                                                    <p class="mb-0">21 مهر 1401</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mt-3 mt-md-0">
+                                            <div class="text-center">
+                                                <div>
+                                                    <h6>مهارت ها:</h6>
+                                                    <p class="mb-0">HTML5 / PHP / CSS3</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <div class="portfolio-single-item image-border">
+                                            <img src="assets/img/portfolio-15.jpg" class="d-block" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="text-md-start mt-5">
+                                        <p class="my-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد </p>
+                                        <p class="mt-3 mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Portfolio Single Modal End  -->
+
+    <!-- Blog Single Modal Start -->
+    <div class="blog-single modal fade" id="blog-single" tabindex="-1" role="dialog" aria-labelledby="blogModalScrollable" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalScrollable">بلاگ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!--   Blog-single   Start -->
+                    <div class="pt-4 pb-5 text-muted">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto blog">
+                                    <div class="rounded">
+                                        <div class="text-md-start">
+                                            <h1 class="mb-4 h4">بهترین راه برای تبدیل شدن به یک طراح وب خوب</h1>
+                                            <div class="entry-meta mb-4">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a class="base-color" href="blog-rtl.html"><i class="fa fa-calendar"></i>21 مهر 1401</a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="base-color" href="blog-rtl.html" title="Posts by admin" rel="author"><i class="fa fa-user"></i>مدیر</a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="base-color" href="blog-rtl.html" rel="category tag"><i class="fa fa-folder-open"></i>طراحی لوگو</a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="base-color" href="blog-rtl.html"><i class="fa fa-comments"></i>بدون نظر.</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="entry-image image-border mb-4">
+                                                <img src="assets/img/blog-01.jpg" alt="">
+                                            </div>
+                                            <div class="entry-content box-border p-3">
+                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                                                <div class="px-md-5 px-3 py-4 quotation">
+                                                    <i class="base-color lni-quotation size-md"></i>
+                                                    <h6 class="base-color font-italic mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h6>
+                                                </div>
+                                                <p class="my-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                                                <ul class="mt-4 checkmark-list mb-0">
+                                                    <!-- Item-01 -->
+                                                    <li class="mb-2">
+                                                        <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است </span>
+                                                    </li>
+                                                    <!-- Item-02 -->
+                                                    <li class="mb-2">
+                                                        <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است </span>
+                                                    </li>
+                                                    <!-- Item-03 -->
+                                                    <li class="">
+                                                        <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است </span>
+                                                    </li>
+                                                </ul>
+                                                <p class="mt-3 mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.</p>
+                                            </div>
+                                            <!-- Comments -->
+                                            <h2 class="text-start my-4">نظرات</h2>
+                                            <div id="user-comments" class="comments mt-4 box-border">
+                                                <ul class="comment even thread-even depth-1 list-unstyled comments-list m-0" id="comment-1">
+                                                    <li id="div-comment-1" class="p-3">
+                                                        <div class="comment-wrap">
+                                                            <div class="comment-image float-start">
+                                                                <div class="commnet-image-border">
+                                                                    <img alt="/" src="assets/img/client-02.png" class="avatar avatar-65 photo" height="65" width="65">
+                                                                </div>
+                                                            </div>
+                                                            <div class="comment-content">
+                                                                <div class="comment-author">
+                                                                    <span>مریم رستگار</span>
+                                                                    <p class="text-muted comment-date">21 مهر 1401 در 09:13 قبل از ظهر</p>
+                                                                    <a href="#" class="comment-reply-link"><i class="fa fa-reply"></i> پاسخ</a>
+                                                                </div>
+                                                                <div class="comment-text">
+                                                                    <span>سلام، این یک دیدگاه است. برای شروع کار با مدیریت، ویرایش و حذف نظرات، لطفاً از صفحه نظرات در داشبورد ببینید. آواتارهای نظردهنده از Gravatar می آیند.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li id="div-comment-1-2" class="reply-comment p-3">
+                                                        <div class="comment-wrap">
+                                                            <div class="comment-image float-start">
+                                                                <div class="commnet-image-border">
+                                                                    <img alt="/" src="assets/img/client-03.png" class="avatar avatar-65 photo" height="65" width="65">
+                                                                </div>
+                                                            </div>
+                                                            <div class="comment-content">
+                                                                <div class="comment-author">
+                                                                    <span>ماندانا راد</span>
+                                                                    <p class="text-muted comment-date">21 مهر 1401 در 09:13 قبل از ظهر</p>
+                                                                    <a href="#" class="comment-reply-link"><i class="fa fa-reply"></i> پاسخ</a>
+                                                                </div>
+                                                                <div class="comment-text">
+                                                                    <span>سلام، این یک دیدگاه است. برای شروع کار با مدیریت، ویرایش و حذف نظرات، لطفاً از صفحه نظرات در داشبورد ببینید. آواتارهای نظردهنده از Gravatar می آیند.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="comments-devider"></div>
+                                                <ul class="comment even thread-even depth-1 list-unstyled comments-list m-0" id="comment-2">
+                                                    <li id="div-comment-2" class="p-3">
+                                                        <div class="comment-wrap">
+                                                            <div class="comment-image float-start">
+                                                                <div class="commnet-image-border">
+                                                                    <img alt="/" src="assets/img/client-01.png" class="avatar avatar-65 photo" height="65" width="65">
+                                                                </div>
+                                                            </div>
+                                                            <div class="comment-content">
+                                                                <div class="comment-author">
+                                                                    <span>محمد پناهی</span>
+                                                                    <p class="text-muted comment-date">21 مهر 1401 در 09:13 قبل از ظهر</p>
+                                                                    <a href="#" class="comment-reply-link"><i class="fa fa-reply"></i> پاسخ</a>
+                                                                </div>
+                                                                <div class="comment-text">
+                                                                    <span>سلام، این یک دیدگاه است. برای شروع کار با مدیریت، ویرایش و حذف نظرات، لطفاً از صفحه نظرات در داشبورد ببینید. آواتارهای نظردهنده از Gravatar می آیند.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="comments-devider"></div>
+                                                <ul class="comment even thread-even depth-1 list-unstyled comments-list m-0" id="comment-3">
+                                                    <li id="div-comment-3" class="p-3">
+                                                        <div class="comment-wrap">
+                                                            <div class="comment-image float-start">
+                                                                <div class="commnet-image-border">
+                                                                    <img alt="/" src="assets/img/client-03.png" class="avatar avatar-65 photo" height="65" width="65">
+                                                                </div>
+                                                            </div>
+                                                            <div class="comment-content">
+                                                                <div class="comment-author">
+                                                                    <span>ماندانا راد</span>
+                                                                    <p class="text-muted comment-date">21 مهر 1401 در 09:13 قبل از ظهر</p>
+                                                                    <a href="#" class="comment-reply-link"><i class="fa fa-reply"></i> پاسخ</a>
+                                                                </div>
+                                                                <div class="comment-text">
+                                                                    <span>سلام، این یک دیدگاه است. برای شروع کار با مدیریت، ویرایش و حذف نظرات، لطفاً از صفحه نظرات در داشبورد ببینید. آواتارهای نظردهنده از Gravatar می آیند.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!--Blog Reply-->
+                                            <div class="contact mt-4">
+                                                <div class="contact-form">
+                                                    <h2 class="text-start mb-4">ارسال پاسخ</h2>
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-lg-6 form-item">
+                                                                <div class="input-group mb-3">
+                                                                    <input name="name" id="blog-name" type="text" class="form-control" placeholder="نام*" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 form-item">
+                                                                <div class="input-group mb-3">
+                                                                    <input name="email" id="blog-email" type="email" class="form-control" placeholder="ایمیل*" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 form-item">
+                                                                <div class="input-group mb-3">
+                                                                    <textarea name="comments" id="blog-comments" rows="4" class="form-control" placeholder="متن پیام..."></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12 mt-4 text-start">
+                                                                <div class="button-border">
+                                                                    <button type="submit" class="pill-button" id="blog-submit-btn">ثبت نظر</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Blog Single Modal End  -->
+
+    <div id="pagepiling" class="pilling-page">
+
+
+        <!--    Hero Start    -->
+        <section class="section pp-scrollable hero hero-06 full-screen p-0 speacial-hero" id="hero" data-navigation-tooltip="خانه">
+            <div class="container-fluid">
+                <div class="text-center hero-content">
+                    <div class="col-lg-12">
+                        <div class="hero-content text-center">
+                            <h3 class="text-white mb-0 mt-3">من علی محمدی هستم</h3>
+                            <h1 class="text-white text-capitalize mb-3"><span class="base-color">یک  </span> <span class="element" data-elements="طراح.,طراح سایت.,توسعه دهنده وب."></span></h1>
+                            <p class=" mx-auto mt-4 text-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-down">
+                    <a href="#about">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--    Hero End    -->
+
+        <!--   About Start   -->
+        <section id="about" class="section pp-scrollable about" data-navigation-tooltip="درباره من">
+            <div class="display-table">
+                <div class="display-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="title-wrapper">
+                                    <span>درباره من</span>
+                                </div>
+                                <div class="title-content">
+                                    <h2 class="base-color">درباره من</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="image-border">
+                                    <img src="assets/img/about-03.jpg" alt="/">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-4 mt-lg-0">
+                                <div class="personal-item ">
+                                    <h3 class="text-dark mt-4 mt-lg-0"><span class="base-color">UI/UX</span> طراحی و توسعه وب</h3>
+                                    <div class="row">
+                                        <div class="col-6 personal-info">
+                                            <ul class="list-unstyled pt-4">
+                                                <li>
+                                                    <p>تاریخ تولد : <span> خرداد 1373</span></p>
+                                                </li>
+                                                <li>
+                                                    <p>وب سایت : <span> www.sample.com</span></p>
+                                                </li>
+                                                <li>
+                                                    <p>تلفن : <span> 09171234567</span></p>
+                                                </li>
+                                                <li>
+                                                    <p>شهر : <span> شیراز</span></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 personal-info">
+                                            <ul class="list-unstyled pt-4">
+                                                <li>
+                                                    <p>سن : <span> 28</span></p>
+                                                </li>
+                                                <li>
+                                                    <p>مدرک : <span> کارشناسی</span></p>
+                                                </li>
+                                                <li>
+                                                    <p>ایمیل : <span> info@example.com</span></p>
+                                                </li>
+                                                <li>
+                                                    <p>فریلنس : <span> امکان پذیر</span></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button-border mt-3 mb-lg-0 me-4">
+                                    <a href="javascript:void(0);" class="pill-button">دانلود رزومه</a>
+                                </div>
+                                <div class="button-border mt-3 mb-lg-0 to-contact">
+                                    <a href="#contact" class="pill-button">استخدام من</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Count up Start -->
+                        <div id="count-up" class="count-up text-center box-border">
+                            <div class="row">
+                                <!-- Item-01 -->
+                                <div class="col-6 col-lg-3 my-3 count-item">
+                                    <div class="count-icon">
+                                        <i class="lni-download base-color"></i>
+                                    </div>
+                                    <div class="my-3">
+                                        <span class="timer count-number" data-from="0" data-to="286" data-speed="5000">0</span>
+                                    </div>
+                                    <p class="mb-0">فایل های دانلود شده</p>
+                                </div>
+                                <!-- Item-02 -->
+                                <div class="col-6 col-lg-3 my-3 count-item">
+                                    <div class="count-icon">
+                                        <i class="lni-pencil-alt base-color"></i>
+                                    </div>
+                                    <div class="my-3">
+                                        <span class="timer count-number" data-from="0" data-to="6549" data-speed="5000">0</span>
+                                    </div>
+                                    <p class="mb-0">پروژه های تمام شده</p>
+                                </div>
+                                <!-- Item-03 -->
+                                <div class="col-6 col-lg-3 my-3 count-item">
+                                    <div class="count-icon">
+                                        <i class="lni-medall  base-color"></i>
+                                    </div>
+                                    <div class="my-3">
+                                        <span class="timer count-number" data-from="0" data-to="793" data-speed="5000">0</span>
+                                    </div>
+                                    <p class="mb-0">جایزه های دریافت شده</p>
+                                </div>
+                                <!-- Item-04 -->
+                                <div class="col-6 col-lg-3 my-3 count-item">
+                                    <div class="count-icon">
+                                        <i class="lni-emoji-smile base-color"></i>
+                                    </div>
+                                    <div class="my-3">
+                                        <span class="timer count-number" data-from="0" data-to="286" data-speed="5000">0</span>
+                                    </div>
+                                    <p class="mb-0">مشتریان راضی</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  Count up End  -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--    About End    -->
+
+        <!--    Resume Start   -->
+        <section id="resume" class="section resume pp-scrollable" data-navigation-tooltip="رزومه من">
+            <div class="display-table">
+                <div class="display-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="title-wrapper">
+                                    <span>رزومه من</span>
+                                </div>
+                                <div class="title-content">
+                                    <h2 class="base-color">رزومه من</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!--    TimeLine Start   -->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="resume-title text-center">
+                                    <h3 class="text-dark">تحصیلات</h3>
+                                    <div class="border-style"></div>
+                                </div>
+                                <div class="timeline-items box-border">
+                                    <!--    Item 01   -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon"></div>
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <h6 class="timeline-title">کارشناسی ارشد علوم کامپیوتر</h6>
+                                                <p class="timeline-year">1391 - 1394</p>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 02   -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon"></div>
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <h6 class="timeline-title">تحصیل در دانشگاه مهندسی شیراز</h6>
+                                                <p class="timeline-year">1394 - 1398</p>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon"></div>
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <h6 class="timeline-title">توسعه دهنده UI/UX</h6>
+                                                <p class="timeline-year">1398 - 1401</p>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-5 mt-lg-0">
+                                <div class="resume-title text-center">
+                                    <h3 class="text-dark">تجربیات</h3>
+                                    <div class="border-style"></div>
+                                </div>
+                                <div class="timeline-items box-border">
+                                    <!--    Item 01   -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon"></div>
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <h6 class="timeline-title">کارشناسی ارشد علوم کامپیوتر</h6>
+                                                <p class="timeline-year">1391 - 1394</p>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 02   -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon"></div>
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <h6 class="timeline-title">تحصیل در دانشگاه مهندسی شیراز</h6>
+                                                <p class="timeline-year">1394 - 1398</p>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-icon"></div>
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <h6 class="timeline-title">توسعه دهنده UI/UX</h6>
+                                                <p class="timeline-year">1398 - 1401</p>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--    TimeLine End   -->
+                        <!--  Skill Start  -->
+                        <div class="row mt-5">
+                            <div class="col-lg-12 mb-3 resume-title">
+                                <h3 class="text-dark text-center"><span class="base-color">مهارت های</span> من</h3>
+                                <div class="border-style"></div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="skill-boxes box-border">
+                                    <div class="row">
+                                        <!-- Skill -->
+                                        <div class="col-lg-6">
+                                            <div class="skill-box">
+                                                <div class="skillbar clearfix" data-percent="95%">
+                                                    <div class="skillbar-title"><span>HTML</span></div>
+                                                    <div class="skillbar-bar fill-skillbar"></div>
+                                                    <div class="skill-bar-percent">95%</div>
+                                                </div>
+                                                <div class="skillbar clearfix " data-percent="85%">
+                                                    <div class="skillbar-title"><span>CSS</span></div>
+                                                    <div class="skillbar-bar fill-skillbar"></div>
+                                                    <div class="skill-bar-percent">85%</div>
+                                                </div>
+                                                <div class="skillbar clearfix" data-percent="75%">
+                                                    <div class="skillbar-title"><span>PHP</span></div>
+                                                    <div class="skillbar-bar fill-skillbar"></div>
+                                                    <div class="skill-bar-percent">75%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="skill-box">
+                                                <div class="skillbar clearfix " data-percent="85%">
+                                                    <div class="skillbar-title"><span>angular js</span></div>
+                                                    <div class="skillbar-bar fill-skillbar"></div>
+                                                    <div class="skill-bar-percent">90%</div>
+                                                </div>
+                                                <div class="skillbar clearfix" data-percent="75%">
+                                                    <div class="skillbar-title"><span>javascript</span></div>
+                                                    <div class="skillbar-bar fill-skillbar"></div>
+                                                    <div class="skill-bar-percent">85%</div>
+                                                </div>
+                                                <div class="skillbar clearfix" data-percent="80%">
+                                                    <div class="skillbar-title"><span>wordpress</span></div>
+                                                    <div class="skillbar-bar fill-skillbar"></div>
+                                                    <div class="skill-bar-percent">70%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--   Skill End   -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--     Resume End    -->
+
+        <!--  Service Start  -->
+        <section id="services" class="section pp-scrollable services" data-navigation-tooltip="خدمات">
+            <div class="display-table">
+                <div class="display-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="title-wrapper">
+                                    <span>خدمات من</span>
+                                </div>
+                                <div class="title-content">
+                                    <h2 class="base-color">خدمات من</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Item 01 -->
+                            <div class="col-lg-4 text-center text-md-start">
+                                <div class="services-item box-hover-border">
+                                    <div class="text-center p-4">
+                                        <i class="lni-brush-alt size-md base-color"></i>
+                                        <h5 class="text-dark">طراحی گرافیک</h5>
+                                        <p class="text-muted mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 02 -->
+                            <div class="col-lg-4 text-center text-md-lef">
+                                <div class="services-item box-hover-border">
+                                    <div class="text-center p-4">
+                                        <i class="lni-check-mark-circle size-md base-color"></i>
+                                        <h5 class="text-dark">پشتیبانی فنی</h5>
+                                        <p class="text-muted mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 03 -->
+                            <div class="col-lg-4 text-center text-md-start">
+                                <div class="services-item box-hover-border">
+                                    <div class="text-center p-4">
+                                        <i class="lni-heart size-md base-color"></i>
+                                        <h5 class="text-dark">تبلیغات</h5>
+                                        <p class="text-muted mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 04 -->
+                            <div class="col-lg-4 text-center text-md-start">
+                                <div class="services-item box-hover-border">
+                                    <div class="text-center p-4">
+                                        <i class="lni-mobile size-md base-color"></i>
+                                        <h5 class="text-dark">طراحی ریسپانسیو</h5>
+                                        <p class="text-muted mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 05 -->
+                            <div class="col-lg-4 text-center text-md-start">
+                                <div class="services-item box-hover-border">
+                                    <div class="text-center p-4">
+                                        <i class="lni-world size-md base-color"></i>
+                                        <h5 class="text-dark">هرآنچه انتظار دارید</h5>
+                                        <p class="text-muted mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 06 -->
+                            <div class="col-lg-4 text-center text-md-start">
+                                <div class="services-item box-hover-border">
+                                    <div class="text-center p-4">
+                                        <i class="lni-cup size-md base-color"></i>
+                                        <h5 class="text-dark">پشتیبانی حرفه ای</h5>
+                                        <p class="text-muted mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--   Service End   -->
+
+        <!-- Portfolio Start -->
+        <section id="portfolio" class="section pp-scrollable portfolio" data-navigation-tooltip="نمونه کارها">
+            <div class="display-table">
+                <div class="display-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="title-wrapper">
+                                    <span>نمونه کارها</span>
+                                </div>
+                                <div class="title-content">
+                                    <h2 class="base-color">نمونه کارها</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!--   Portfolio Filters   -->
+                            <ul id="portfolio-filter" class="list-unstyled list-inline mb-0 col-lg-12 text-center portfolio-filter">
+                                <li class="button-border list-inline-item">
+                                    <a href="#" data-filter="*" class="pill-button active">همه</a>
+                                </li>
+                                <li class="button-border list-inline-item">
+                                    <a href="#" data-filter=".webdesign" class="pill-button">طراحی سایت</a>
+                                </li>
+                                <li class="button-border list-inline-item">
+                                    <a href="#" data-filter=".mobiledesign" class="pill-button">طراحی لوگو</a>
+                                </li>
+                                <li class="button-border list-inline-item">
+                                    <a href="#" data-filter=".seo" class="pill-button">سئو</a>
+                                </li>
+                                <li class="button-border list-inline-item">
+                                    <a href="#" data-filter=".graphic" class="pill-button">گرافیک</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-items row">
+                            <!-- Item 01 -->
+                            <div class="col-lg-4 portfolio-item seo">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="assets/img/portfolio-10.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="JavaScript:Void();" type="button" data-bs-toggle="modal" data-bs-target="#portfolio-single"><i class="lni-link"></i></a>
+                                                    <a href="assets/img/portfolio-10.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">کار من</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 02 -->
+                            <div class="col-lg-4 portfolio-item graphic webdesign">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="assets/img/portfolio-11.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="JavaScript:Void();" type="button" data-bs-toggle="modal" data-bs-target="#portfolio-single"><i class="lni-link"></i></a>
+                                                    <a href="assets/img/portfolio-11.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">کار من</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 03 -->
+                            <div class="col-lg-4 portfolio-item webdesign graphic">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="assets/img/portfolio-12.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="JavaScript:Void();" type="button" data-bs-toggle="modal" data-bs-target="#portfolio-single"><i class="lni-link"></i></a>
+                                                    <a href="assets/img/portfolio-12.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">کار من</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 04 -->
+                            <div class="col-lg-4 portfolio-item mobiledesign webdesign">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="assets/img/portfolio-13.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="JavaScript:Void();" type="button" data-bs-toggle="modal" data-bs-target="#portfolio-single"><i class="lni-link"></i></a>
+                                                    <a href="assets/img/portfolio-13.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">کار من</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 05 -->
+                            <div class="col-lg-4 portfolio-item mobiledesign seo">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="assets/img/portfolio-14.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="JavaScript:Void();" type="button" data-bs-toggle="modal" data-bs-target="#portfolio-single"><i class="lni-link"></i></a>
+                                                    <a href="assets/img/portfolio-14.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">کار من</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 06 -->
+                            <div class="col-lg-4 portfolio-item mobiledesign">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="assets/img/portfolio-15.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="JavaScript:Void();" type="button" data-bs-toggle="modal" data-bs-target="#portfolio-single"><i class="lni-link"></i></a>
+                                                    <a href="assets/img/portfolio-15.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">کار من</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 07 -->
+                            <div class="col-lg-4 portfolio-item mobiledesign webdesign">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="assets/img/portfolio-16.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="JavaScript:Void();" type="button" data-bs-toggle="modal" data-bs-target="#portfolio-single"><i class="lni-link"></i></a>
+                                                    <a href="assets/img/portfolio-16.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">کار من</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 08 -->
+                            <div class="col-lg-4 portfolio-item webdesign graphic">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="assets/img/portfolio-17.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="JavaScript:Void();" type="button" data-bs-toggle="modal" data-bs-target="#portfolio-single"><i class="lni-link"></i></a>
+                                                    <a href="assets/img/portfolio-17.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">کار من</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 09 -->
+                            <div class="col-lg-4 portfolio-item seo">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="assets/img/portfolio-18.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="JavaScript:Void();" type="button" data-bs-toggle="modal" data-bs-target="#portfolio-single"><i class="lni-link"></i></a>
+                                                    <a href="assets/img/portfolio-18.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">کار من</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 10 -->
+                            <div class="col-lg-4 portfolio-item mobiledesign seo">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="assets/img/portfolio-11.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="JavaScript:Void();" type="button" data-bs-toggle="modal" data-bs-target="#portfolio-single"><i class="lni-link"></i></a>
+                                                    <a href="assets/img/portfolio-11.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">کار من</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 11 -->
+                            <div class="col-lg-4 portfolio-item webdesign graphic">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="assets/img/portfolio-14.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="JavaScript:Void();" type="button" data-bs-toggle="modal" data-bs-target="#portfolio-single"><i class="lni-link"></i></a>
+                                                    <a href="assets/img/portfolio-14.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">کار من</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 12 -->
+                            <div class="col-lg-4 portfolio-item seo graphic">
+                                <div class="image-border">
+                                    <div class="portfolio-item-content">
+                                        <img src="assets/img/portfolio-16.jpg" alt="/" class="img-fluid">
+                                        <div class="img-overlay text-center">
+                                            <div class="img-overlay-content">
+                                                <div class="portfolio-icon">
+                                                    <a href="JavaScript:Void();" type="button" data-bs-toggle="modal" data-bs-target="#portfolio-single"><i class="lni-link"></i></a>
+                                                    <a href="assets/img/portfolio-16.jpg" class="js-zoom-gallery">
+                                                        <i class="lni-search"></i>
+                                                    </a>
+                                                </div>
+                                                <h5 class="mt-3 mb-0">کار من</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12 text-center pt-2">
+                                <div class="button-border d-inline-block">
+                                    <a href="portfolio-rtl.html" class="pill-button">صفحه نمونه کارها</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  Portfolio End  -->
+
+        <!-- Testimonial Start -->
+        <section id="testimonial" class="section pp-scrollable testimonial" data-navigation-tooltip="نظرها">
+            <div class="display-table">
+                <div class="display-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="title-wrapper">
+                                    <span>دیدگاه مشتریان</span>
+                                </div>
+                                <div class="title-content">
+                                    <h2 class="base-color">دیدگاه مشتریان</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="owl-carousel">
+                                    <!-- Testimonial Item-01 -->
+                                    <div class="testimonial-item box-border">
+                                        <div class="testimonial-image">
+                                            <div class="testimonial-image-border">
+                                                <img src="assets/img/client-01.png" alt="/">
+                                            </div>
+                                        </div>
+                                            <p class="mb-0 mt-3 text-muted">" لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. "</p>
+                                        <span class="d-block fw-bold text-dark mt-3">محمد پناهی ،<small class="text-muted">مدیر سایت</small></span>
+                                    </div>
+                                    <!-- Testimonial Item-02 -->
+                                    <div class="testimonial-item box-border">
+                                        <div class="testimonial-image">
+                                            <div class="testimonial-image-border">
+                                                <img src="assets/img/client-02.png" alt="/">
+                                            </div>
+                                        </div>
+                                        <p class="mb-0 mt-3 text-muted">" لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. "</p>
+                                        <span class="d-block fw-bold text-dark mt-3">مریم رستگار ،<small class="text-muted">مدیر بازاریابی</small></span>
+                                    </div>
+                                    <!-- Testimonial Item-03 -->
+                                    <div class="testimonial-item box-border">
+                                        <div class="testimonial-image">
+                                            <div class="testimonial-image-border">
+                                                <img src="assets/img/client-03.png" alt="/">
+                                            </div>
+                                        </div>
+                                        <p class="mb-0 mt-3 text-muted">" لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. "</p>
+                                        <span class="d-block fw-bold text-dark mt-3">ماندانا راد ،<small class="text-muted">طراح وب</small></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  Testimonial End  -->
+
+        <!--  Blog Start  -->
+        <section id="blog" class="section pp-scrollable blog" data-navigation-tooltip="بلاگ">
+            <div class="display-table">
+                <div class="display-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="title-wrapper">
+                                    <span>نوشته های اخیر</span>
+                                </div>
+                                <div class="title-content">
+                                    <h2 class="base-color">نوشته های اخیر</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!--  Item 01 -->
+                            <div class="col-lg-4">
+                                <div class="blog-item box-border">
+                                    <div class="blog-image">
+                                        <div class="blog-intro">
+                                            <img src="assets/img/blog-01.jpg" alt="/">
+                                        </div>
+                                    </div>
+                                    <div class="blog-content">
+                                        <ul class="list-inline mt-4">
+                                            <li class="list-inline-item">
+                                                <i class="lni-calendar base-color"></i>
+                                                <span class="text-muted">21 مهر 1401 </span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="lni-comment base-color"></i>
+                                                <span class="text-muted">5</span>
+                                            </li>
+                                        </ul>
+                                        <h6 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank" data-bs-toggle="modal" data-bs-target="#blog-single"> بهترین خودت باش</a></h6>
+                                        <p class="text-dark">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                        <div class="blog-link">
+                                            <a class="base-color" href="javascript:void(0)" target="_blank" data-bs-toggle="modal" data-bs-target="#blog-single">ادامه مطلب...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  Item 02 -->
+                            <div class="col-lg-4">
+                                <div class="blog-item box-border">
+                                    <div class="blog-image">
+                                        <div class="blog-intro">
+                                            <img src="assets/img/blog-02.jpg" alt="/">
+                                        </div>
+                                    </div>
+                                    <div class="blog-content">
+                                        <ul class="list-inline mt-4">
+                                            <li class="list-inline-item">
+                                                <i class="lni-calendar base-color"></i>
+                                                <span class="text-muted">13 آذر 1401 </span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="lni-comment base-color"></i>
+                                                <span class="text-muted">3</span>
+                                            </li>
+                                        </ul>
+                                        <h6 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank" data-bs-toggle="modal" data-bs-target="#blog-single"> 5 نکته در طراحی UI/UX</a></h6>
+                                        <p class="text-dark">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                        <div class="blog-link">
+                                            <a class="base-color" href="javascript:void(0)" target="_blank" data-bs-toggle="modal" data-bs-target="#blog-single">ادامه مطلب...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  Item 03 -->
+                            <div class="col-lg-4">
+                                <div class="blog-item box-border">
+                                    <div class="blog-image">
+                                        <div class="blog-intro">
+                                            <img src="assets/img/blog-03.jpg" alt="/">
+                                        </div>
+                                    </div>
+                                    <div class="blog-content">
+                                        <ul class="list-inline mt-4">
+                                            <li class="list-inline-item">
+                                                <i class="lni-calendar base-color"></i>
+                                                <span class="text-muted">23 خرداد 1401 </span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="lni-comment base-color"></i>
+                                                <span class="text-muted">8</span>
+                                            </li>
+                                        </ul>
+                                        <h6 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank" data-bs-toggle="modal" data-bs-target="#blog-single"> رویاهات رو بنویس</a></h6>
+                                        <p class="text-dark">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                        <div class="blog-link">
+                                            <a class="base-color" href="javascript:void(0)" target="_blank" data-bs-toggle="modal" data-bs-target="#blog-single">ادامه مطلب...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <div class="button-border">
+                                    <a href="blog-rtl.html" class="pill-button">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--   Blog End   -->
+
+        <!-- Contact Start -->
+        <section id="contact" class="section pp-scrollable contact" data-navigation-tooltip="تماس با من">
+            <div class="display-table">
+                <div class="display-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="title-wrapper">
+                                    <span>ارتباط با من</span>
+                                </div>
+                                <div class="title-content">
+                                    <h2 class="base-color">ارتباط با من</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row contact-info">
+                            <div class="col-lg-4">
+                                <div class="contact-info-text text-center">
+                                    <div class="base-color">
+                                        <i class="lni-phone-handset size-md"></i>
+                                    </div>
+                                    <div class="mt-3">
+                                        <h5 class="text-dark mb-0">تلفن تماس</h5>
+                                        <small class="text-muted">09171234567</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="contact-info-text text-center">
+                                    <div class="base-color">
+                                        <i class="lni-map-marker size-md"></i>
+                                    </div>
+                                    <div class="mt-3">
+                                        <h5 class="text-dark mb-0 contact_detail-title">آدرس دفتر</h5>
+                                        <small class="text-muted">فارس ، شیراز ، قصرالدشت</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="contact-info-text text-center">
+                                    <div class="base-color">
+                                        <i class="lni-pointer size-md"></i>
+                                    </div>
+                                    <div class="mt-3">
+                                         <h5 class="text-dark mb-0">ایمیل من</h5>
+                                        <small class="text-muted">info@example.com</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 mt-5 contact-form">
+                                <form id="contactForm">
+                                    <div class="row">
+                                        <div class="col-lg-6 form-item">
+                                            <div class="input-group mb-3">
+                                                <input name="name" id="name" type="text" class="form-control" placeholder="نام*" required >
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 form-item">
+                                            <div class="input-group mb-3">
+                                                <input name="email" id="email" type="email" class="form-control" placeholder="ایمیل*" required >
+                                            </div>
+                                        </div>
+                                        <div class="col-12 form-item">
+                                            <div class="input-group mb-3">
+                                                <input name="subject" id="subject" type="text" class="form-control" placeholder="موضوع*" required >
+                                            </div>
+                                        </div>
+                                        <div class="col-12 form-item">
+                                            <div class="input-group mb-3">
+                                                <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="متن پیام..."></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 mt-4 text-start position-relative">
+                                            <div class="button-border">
+                                                <a href="javascript:void(0)" class="pill-button" id="submit-btn" onclick="sendEmail()">ارسال پیام</a>
+                                            </div>
+                                            <div id="message" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000" >
+                                                <div class="toast-body d-inline-block"></div>
+                                                <button type="button" class="btn-close btn-close-white pt-4 pe-3" data-bs-dismiss="toast" aria-label="Close"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row copy-right">
+                            <div class="col-12 text-center text-dark">
+                                <p>حق نشر محفوظ است. طراحی قالب توسط <span class="base-color">مینا تارخ</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  Contact End  -->
+
+        <!-- Start Options -->
+        <div id="color-switcher" class="color-switcher" >
+            <div class="text-center color-pallet hide">
+                <h6 class="theme-skin-title">پوسته قالب</h6>
+                <ul class="theme-skin list-inline">
+                    <li class="list-inline-item">
+                        <a href="javascript:void(0)" class="flat-skin active">مسطح</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="javascript:void(0)" class="neo-skin">نئو</a>
+                    </li>
+                </ul>
+                <h6 class="text-center mt-3">انتخاب رنگ مورد نظر</h6>
+                <ul class="pattern">
+                    <li>
+                        <a class="color1" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="color2" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="color3" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="color4" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="color5" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="color6" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="color7" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="color8" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="color9" href="#"></a>
+                    </li>
+                </ul>
+                <h6 class="my-2 color-scheme-title">نسخه تیره و روشن</h6>
+                <ul class="color-scheme list-inline">
+                    <li class="list-inline-item">
+                        <a href="javascript:void(0)" class="light-scheme active"><i class="lni-sun"></i> روشن</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="javascript:void(0)" class="dark-scheme"><i class="lni-night"></i> تیره</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pallet-button hide">
+                <a href="#" class="cp-toggle"><i class="fa fa-cog fa-spin"></i></a>
+            </div>
+        </div>
+        <!-- End Options -->
+
+    </div>
+
+    <!--  JavaScripts  -->
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <!--  Bootstrap Js  -->
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <!--  Page Pilling Js  -->
+    <script src="{% static 'js/pagePiling.js' %}"></script>
+    <!--  Easing Js  -->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <!--  CountTo Js  -->
+    <script src="{% static 'js/jquery.countTo.js' %}"></script>
+    <!--  Typed Js  -->
+    <script src="{% static 'js/typed.js' %}"></script>
+    <!--  Magnific Popup Js  -->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <!--  Isotope Js  -->
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <!--  Owl Carousel Js  -->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <!--  Particle Js  -->
+    <script src="{% static 'js/particles.min.js' %}"></script>
+    <!--  Particle App Js  -->
+    <script src="{% static 'js/particles.app.js' %}"></script>
+    <!--  Custom JS  -->
+    <script src="{% static 'js/arshia-rtl.js' %}"></script>
+
+{% endblock %}

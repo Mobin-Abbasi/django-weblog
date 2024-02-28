@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% block title %}{% endblock %}</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Retrina Group" />
+
+        <!--  FavIcon  -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+        <!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+
+        <!-- FontAwesome Css -->
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+        <!-- Line icon Css -->
+        <link rel="stylesheet" href="{% static 'css/LineIcons.css' %}">
+        <!-- Bootstrap Css -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.rtl.css' %}">
+        <!-- Page Pilling Css -->
+        <link rel="stylesheet" href="{% static 'css/pagepiling.css' %}">
+        <!-- Owl Carousel Css -->
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+        <!-- Magnific Popup Css -->
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+        <!-- Colors Css -->
+        <link rel="stylesheet" href="{% static 'css/color/blue-color.css' %}" id="option-color">
+        <!--  Custom Style CSS  -->
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <!--  Rtl Style CSS  -->
+        <link rel="stylesheet" href="{% static 'css/rtl-main.css' %}">
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#scrollspy" data-offset="1" class="flat-demo">
+
+        {% include 'partials/header.html' %}
+        {% block content %}{% endblock %}
+
+    </body>
+</html>
