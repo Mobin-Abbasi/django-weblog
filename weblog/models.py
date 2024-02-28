@@ -25,3 +25,23 @@ class Portfolio(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class PortfolioImage(models.Model):
+    # relation
+    author = models.ForeignKey(Portfolio, related_name='portfolio_images', on_delete=models.CASCADE)
+    # data
+    title = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='post_images/')
+    description = models.TextField()
+    # date
+    created = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-created']
+        indexes = [
+            models.Index(fields=(['-created']))
+        ]
+
+    def __str__(self):
+        return self.title
