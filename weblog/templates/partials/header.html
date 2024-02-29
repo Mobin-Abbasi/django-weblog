@@ -14,7 +14,7 @@
 <!--   Header Start -->
 <header>
     <div class="logo-area">
-        <a href="#hero" class="logo special-section">
+        <a href="{% url 'weblog:index' %}" class="logo special-section">
             <span>ار<span class="base-color">شیا</span></span>
         </a>
     </div>
@@ -32,16 +32,16 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto overlay-nav">
                     <ul class="list-group text-start" id="myMenu">
-                        <li data-menuanchor="hero" class="list-group-item"><a href="#hero">خانه</a></li>
-                        <li data-menuanchor="about" class="list-group-item"><a href="#about">درباره من</a></li>
-                        <li data-menuanchor="services" class="list-group-item"><a href="#services">خدمات</a></li>
-                        <li data-menuanchor="portfolio" class="list-group-item"><a href="#portfolio">نمونه کارها</a></li>
-                        <li data-menuanchor="client" class="list-group-item"><a href="#testimonial">نظرها</a></li>
-                        <li data-menuanchor="blog" class="list-group-item"><a href="#blog">بلاگ</a></li>
+                        <li data-menuanchor="hero" class="list-group-item"><a href="{% url 'weblog:index' %}#hero">خانه</a></li>
+                        <li data-menuanchor="about" class="list-group-item"><a href="{% url 'weblog:index' %}#about">درباره من</a></li>
+                        <li data-menuanchor="services" class="list-group-item"><a href="{% url 'weblog:index' %}#services">خدمات</a></li>
+                        <li data-menuanchor="portfolio" class="list-group-item"><a href="{% url 'weblog:index' %}#portfolio">نمونه کارها</a></li>
+                        <li data-menuanchor="client" class="list-group-item"><a href="{% url 'weblog:index' %}#testimonial">نظرها</a></li>
+                        <li data-menuanchor="blog" class="list-group-item"><a href="{% url 'weblog:index' %}#blog">بلاگ</a></li>
                     </ul>
                     <ul class="list-group contact-info text-start mb-0">
                         <li class="list-group-item"><span>اطلاعات تماس :</span></li>
-                        <li class="list-group-item"><span><i class="lni-map-marker"></i> شیراز</span></li>
+                        <li class="list-group-item"><span><i class="lni-map-marker"></i> تهران</span></li>
                         <li class="list-group-item"><span><i class="lni-phone-handset"></i> 09171234567</span></li>
                         <li class="list-group-item"><span><i class="lni-envelope"></i> info@example.com</span></li>
                         <li class="list-group-item"><span>دنبال کردن من :</span></li>

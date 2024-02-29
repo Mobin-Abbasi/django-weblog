@@ -15,3 +15,11 @@ def portfolio_list(request):
         'portfolios': portfolios
     }
     return render(request, 'weblog/portfolio_list.html', context)
+
+
+def portfolio_detail(request, pk):
+    portfolio = get_object_or_404(Portfolio, id=pk)
+    context = {
+        'portfolio': portfolio
+    }
+    return render(request, 'weblog/portfolio_detail.html', context)
