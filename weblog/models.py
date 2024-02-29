@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User
 from django.db import models
 from django.urls import reverse
+from django_jalali.db import models as jmodels
 
 # Create your models here.
 
@@ -15,8 +16,8 @@ class Portfolio(models.Model):
     slug = models.CharField(max_length=255)
     # date
     project_completion = models.DateTimeField()
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
+    created = jmodels.jDateTimeField(auto_now_add=True)
+    updated = jmodels.jDateTimeField(auto_now=True)
 
     class Meta:
         ordering = ['-created']
@@ -36,7 +37,7 @@ class PortfolioImage(models.Model):
     image = models.ImageField(upload_to='post_images/')
     description = models.TextField()
     # date
-    created = models.DateTimeField(auto_now_add=True)
+    created = jmodels.jDateTimeField(auto_now_add=True)
 
     class Meta:
         ordering = ['-created']
