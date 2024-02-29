@@ -12,7 +12,7 @@ class PortfolioImageInline(admin.TabularInline):
 
 @admin.register(Portfolio)
 class PortfolioAdmin(admin.ModelAdmin):
-    list_display = ['title', 'author', 'skills', 'project_completion', 'created', 'updated']
+    list_display = ['title', 'author', 'skills', 'project_completion', 'created']
     list_filter = ['skills', 'project_completion', 'created', 'updated']
     search_fields = ['title', 'description']
     prepopulated_fields = {'slug': ['title']}

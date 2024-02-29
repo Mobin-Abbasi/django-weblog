@@ -15,7 +15,7 @@ class Portfolio(models.Model):
     skills = models.CharField(max_length=255)
     slug = models.CharField(max_length=255)
     # date
-    project_completion = models.DateTimeField()
+    project_completion = jmodels.jDateTimeField()
     created = jmodels.jDateTimeField(auto_now_add=True)
     updated = jmodels.jDateTimeField(auto_now=True)
 
