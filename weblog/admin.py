@@ -10,6 +10,11 @@ class PortfolioImageInline(admin.TabularInline):
     extra = 0
 
 
+class BlogImageInline(admin.TabularInline):
+    model = BlogImage
+    extra = 0
+
+
 @admin.register(Portfolio)
 class PortfolioAdmin(admin.ModelAdmin):
     list_display = ['title', 'author', 'skills', 'project_completion', 'created']
@@ -32,4 +37,9 @@ class BlogAdmin(admin.ModelAdmin):
     search_fields = ['title', 'description']
     prepopulated_fields = {'slug': ['title']}
     raw_id_fields = ['author']
+    inlines = [BlogImageInline]
 
+
+@admin.register(BlogImage)
+class BlogImageAdmin(admin.ModelAdmin):
+    list_display = ['title', 'author', 'created']
