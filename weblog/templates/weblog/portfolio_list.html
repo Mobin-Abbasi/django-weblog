@@ -54,7 +54,7 @@
                                         <div class="img-overlay text-center">
                                             <div class="img-overlay-content">
                                                 <div class="portfolio-icon">
-                                                    <a href="#"><i class="lni-link"></i></a>
+                                                    <a href="{% url 'weblog:portfolio_detail' portfolio.id %}"><i class="lni-link"></i></a>
                                                     <a href="{{ portfolio.portfolio_images.first.image.url }}" class="js-zoom-gallery">
                                                         <i class="lni-search"></i>
                                                     </a>
