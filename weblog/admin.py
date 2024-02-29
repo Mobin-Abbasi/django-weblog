@@ -18,3 +18,8 @@ class PortfolioAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ['title']}
     raw_id_fields = ['author']
     inlines = [PortfolioImageInline]
+
+
+@admin.register(PortfolioImage)
+class PortfolioImageAdmin(admin.ModelAdmin):
+    list_display = ['title', 'author', 'created']
