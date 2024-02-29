@@ -41,7 +41,6 @@ class PortfolioImage(models.Model):
     # data
     title = models.CharField(max_length=255)
     image = models.ImageField(upload_to='post_images/')
-    description = models.TextField()
     # date
     created = jmodels.jDateTimeField(auto_now_add=True)
 
@@ -74,6 +73,25 @@ class Blog(models.Model):
     # date
     created = jmodels.jDateField(auto_now_add=True)
     updated = jmodels.jDateField(auto_now=True)
+
+    class Meta:
+        ordering = ['-created']
+        indexes = [
+            models.Index(fields=(['-created']))
+        ]
+
+    def __str__(self):
+        return self.title
+
+
+class BlogImage(models.Model):
+    # relation
+    author = models.ForeignKey(Blog, related_name='blog_images', on_delete=models.CASCADE)
+    # data
+    title = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='post_images/')
+    # date
+    created = jmodels.jDateTimeField(auto_now_add=True)
 
     class Meta:
         ordering = ['-created']
