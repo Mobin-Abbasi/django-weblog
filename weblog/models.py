@@ -72,8 +72,8 @@ class Blog(models.Model):
     slug = models.SlugField(max_length=255)
     category = models.CharField(max_length=255, choices=CATEGORY_CHOICES, default='سایر')
     # date
-    created = models.DateField(auto_now_add=True)
-    updated = models.DateField(auto_now=True)
+    created = jmodels.jDateField(auto_now_add=True)
+    updated = jmodels.jDateField(auto_now=True)
 
     class Meta:
         ordering = ['-created']
