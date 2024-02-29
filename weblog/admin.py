@@ -23,3 +23,13 @@ class PortfolioAdmin(admin.ModelAdmin):
 @admin.register(PortfolioImage)
 class PortfolioImageAdmin(admin.ModelAdmin):
     list_display = ['title', 'author', 'created']
+
+
+@admin.register(Blog)
+class BlogAdmin(admin.ModelAdmin):
+    list_display = ['title', 'author', 'category', 'created']
+    list_filter = ['category', 'created', 'updated']
+    search_fields = ['title', 'description']
+    prepopulated_fields = {'slug': ['title']}
+    raw_id_fields = ['author']
+

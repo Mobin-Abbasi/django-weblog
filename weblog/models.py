@@ -53,3 +53,33 @@ class PortfolioImage(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Blog(models.Model):
+    # blog category
+    CATEGORY_CHOICES = (
+        ('زبان برنامه نویسی', 'زبان برنامه نویسی'),
+        ('طراحی سایت', 'طراحی سایت'),
+        ('سئو', 'سئو'),
+        ('UI و UX', 'UI و UX'),
+        ('سایر', 'سایر'),
+    )
+    # relation
+    author = models.ForeignKey(User, related_name='user_blogs', on_delete=models.CASCADE, default='1')
+    # data
+    title = models.CharField(max_length=255)
+    description = models.TextField()
+    slug = models.SlugField(max_length=255)
+    category = models.CharField(max_length=255, choices=CATEGORY_CHOICES, default='سایر')
+    # date
+    created = models.DateField(auto_now_add=True)
+    updated = models.DateField(auto_now=True)
+
+    class Meta:
+        ordering = ['-created']
+        indexes = [
+            models.Index(fields=(['-created']))
+        ]
+
+    def __str__(self):
+        return self.title
