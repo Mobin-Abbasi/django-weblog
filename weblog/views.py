@@ -25,16 +25,19 @@ def portfolio_detail(request, pk):
     return render(request, 'weblog/portfolio_detail.html', context)
 
 
-def blog_list(request):
-    blogs = Blog.objects.all()
+def blog_list(request, category=None):
+    if category is not None:
+        blogs = Blog.objects.filter(category=category)
+    else:
+        blogs = Blog.objects.all()
     context = {
         'blogs': blogs,
     }
     return render(request, 'weblog/blog_list.html', context)
 
 
-def blog_detail(request, pk):
-    blog = get_object_or_404(Blog, id=pk)
+def blog_detail(request, id):
+    blog = get_object_or_404(Blog, id=id)
     context = {
         'blog': blog,
     }

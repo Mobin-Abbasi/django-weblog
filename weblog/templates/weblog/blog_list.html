@@ -100,10 +100,11 @@
                     </div>
                     <div class="aside-item">
                         <ul class="list-unstyled mb-0">
-                            <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="#">توسعه</a></li>
-                            <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="#">طراحی لوگو</a></li>
-                            <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="#">UI و UX</a></li>
-                            <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="#">طراحی وب</a></li>
+                            <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="{% url 'weblog:blog_list_category' 'زبان برنامه نویسی' %}">زبان برنامه نویسی</a></li>
+                            <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="{% url 'weblog:blog_list_category' 'طراحی سایت' %}">طراحی سایت</a></li>
+                            <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="{% url 'weblog:blog_list_category' 'سئو' %}">سئو</a></li>
+                            <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="{% url 'weblog:blog_list_category' 'UI و UX' %}">UI و UX</a></li>
+                            <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="{% url 'weblog:blog_list_category' 'سایر' %}">سایر</a></li>
                         </ul>
                     </div>
                 </div>

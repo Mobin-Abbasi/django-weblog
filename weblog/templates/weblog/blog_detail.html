@@ -181,19 +181,6 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <!-- Recent Comments -->
-                                    <div class="aside-contents">
-                                        <div class="aside-title">
-                                            <span class="base-color">نظرات اخیر</span>
-                                        </div>
-                                        <div class="aside-item">
-                                            <ul class="list-unstyled mb-0">
-                                                <li><i class="fa fa-circle-o base-color"></i><a href="#">نکات مفیدی بود!</a></li>
-                                                <li><i class="fa fa-circle-o base-color"></i><a href="#">3 راه برای دانستن اینکه کدام یک بهتر است وجود دارد؟ من می گویم Vue</a></li>
-                                                <li><i class="fa fa-circle-o base-color"></i><a href="#">با تشکر از آموزش Html 5 و Css 3 شما که عالی بود.</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
                                     <!-- Categories -->
                                     <div class="aside-contents">
                                         <div class="aside-title">
@@ -201,37 +188,11 @@
                                         </div>
                                         <div class="aside-item">
                                             <ul class="list-unstyled mb-0">
-                                                <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="#">توسعه</a></li>
-                                                <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="#">طراحی لوگو</a></li>
-                                                <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="#">UI و UX</a></li>
-                                                <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="#">طراحی وب</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- Archives -->
-                                    <div class="aside-contents">
-                                        <div class="aside-title">
-                                            <span class="base-color">بایگانی</span>
-                                        </div>
-                                        <div class="aside-item">
-                                            <ul class="list-unstyled mb-0">
-                                                <li><i class="fa fa-circle-o base-color"></i><a href="#">آذر 1401</a></li>
-                                                <li><i class="fa fa-circle-o base-color"></i><a href="#">مهر 1401</a></li>
-                                                <li><i class="fa fa-circle-o base-color"></i><a href="#">شهریور 1401</a></li>
-                                                <li><i class="fa fa-circle-o base-color"></i><a href="#">مرداد 1401</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- Tags -->
-                                    <div class="aside-contents">
-                                        <div class="aside-title">
-                                            <span class="base-color">برچسب ها</span>
-                                        </div>
-                                        <div class="aside-item blog-single-tag mb-0">
-                                            <ul class="list-unstyled mb-0">
-                                                <li><i class="fa fa-circle-o base-color"></i><a href="#">CSS3</a></li>
-                                                <li><i class="fa fa-circle-o base-color"></i><a href="#">HTML5</a></li>
-                                                <li><i class="fa fa-circle-o base-color"></i><a href="#">طراحی وب</a></li>
+                                                <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="{% url 'weblog:blog_list_category'  'زبان برنامه نویسی'%}">زبان برنامه نویسی</a></li>
+                                                <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="{% url 'weblog:blog_list_category' 'طراحی سایت' %}">طراحی سایت</a></li>
+                                                <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="{% url 'weblog:blog_list_category' 'سئو' %}">سئو</a></li>
+                                                <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="{% url 'weblog:blog_list_category' 'UI و UX' %}">UI و UX</a></li>
+                                                <li class="cat-item"><i class="fa fa-circle-o base-color"></i><a href="{% url 'weblog:blog_list_category' 'سایر' %}">سایر</a></li>
                                             </ul>
                                         </div>
                                     </div>
