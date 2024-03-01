@@ -83,6 +83,12 @@ class Blog(models.Model):
     def __str__(self):
         return self.title
 
+    def delete(self, *args, **kwargs):
+        for img in self.blog_images.all():
+            storage, path = img.image.storage, img.image.path
+            storage.delete(path)
+        super().delete(*args, **kwargs)
+
 
 class BlogImage(models.Model):
     # relation
