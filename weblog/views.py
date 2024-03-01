@@ -23,3 +23,19 @@ def portfolio_detail(request, pk):
         'portfolio': portfolio
     }
     return render(request, 'weblog/portfolio_detail.html', context)
+
+
+def blog_list(request):
+    blogs = Blog.objects.all()
+    context = {
+        'blogs': blogs,
+    }
+    return render(request, 'weblog/blog_list.html', context)
+
+
+def blog_detail(request, pk):
+    blog = get_object_or_404(Blog, id=pk)
+    context = {
+        'blog': blog,
+    }
+    return render(request, 'weblog/blog_detail.html', context)
