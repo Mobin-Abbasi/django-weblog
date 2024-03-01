@@ -34,6 +34,9 @@ class Portfolio(models.Model):
             storage.delete(path)
         super().delete(*args, **kwargs)
 
+    def get_absolute_url(self):
+        return reverse('weblog:portfolio_detail', args=[self.id])
+
 
 class PortfolioImage(models.Model):
     # relation
@@ -88,6 +91,9 @@ class Blog(models.Model):
             storage, path = img.image.storage, img.image.path
             storage.delete(path)
         super().delete(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return reverse('weblog:blog_detail', args=[self.id])
 
 
 class BlogImage(models.Model):

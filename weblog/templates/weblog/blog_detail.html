@@ -1,6 +1,7 @@
 {% extends 'parent/base.html' %}
 {% load static %}
 {% load jformat %}
+{% load weblog_tags %}
 {% block title %}{% endblock %}
 {% block content %}
 
@@ -20,101 +21,15 @@
                             <div class="col-lg-9 blog">
                                 <div class="rounded">
                                     <div class="text-md-start">
-                                        <h1 class="mb-4 h4">بهترین راه برای تبدیل شدن به یک طراح وب خوب</h1>
+                                        <h1 class="mb-4 h4">{{ blog.title }}</h1>
                                         <div class="entry-image image-border mb-4">
                                             <img src="{{ blog.blog_images.first.image.url }}" alt="{{ blog.blog_images.first.image.url }}">
                                         </div>
                                         <div class="entry-content box-border p-3">
-                                            <p class="my-3">{{ blog.description }}</p>
+                                            <p class="my-3">{{ blog.description | linebreaks}}</p>
                                         </div>
                                         <!-- Comments -->
                                         <h2 class="text-start my-4">نظرات</h2>
-                                        <div id="user-comments" class="comments mt-4 box-border">
-                                            <ul class="comment even thread-even depth-1 list-unstyled comments-list m-0" id="comment-1">
-                                                <li id="div-comment-1" class="p-3">
-                                                    <div class="comment-wrap">
-                                                        <div class="comment-image float-start">
-                                                            <div class="commnet-image-border">
-                                                                <img alt="/" src="assets/img/woman.png" class="avatar avatar-65 photo" height="65" width="65">
-                                                            </div>
-                                                        </div>
-                                                        <div class="comment-content">
-                                                            <div class="comment-author">
-                                                                <span>مریم رستگار</span>
-                                                                <p class="text-muted comment-date">21 مهر 1401 در 09:13 قبل از ظهر</p>
-                                                                <a href="#" class="comment-reply-link"><i class="fa fa-reply fa-flip-horizontal"></i> پاسخ</a>
-                                                            </div>
-                                                            <div class="comment-text">
-                                                                <span>سلام، این یک دیدگاه است. برای شروع کار با مدیریت، ویرایش و حذف نظرات، لطفاً از صفحه نظرات در داشبورد ببینید. آواتارهای نظردهنده از Gravatar می آیند.</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li id="div-comment-1-2" class="reply-comment p-3">
-                                                    <div class="comment-wrap">
-                                                        <div class="comment-image float-start">
-                                                            <div class="commnet-image-border">
-                                                                <img alt="/" src="assets/img/woman-avator.png" class="avatar avatar-65 photo" height="65" width="65">
-                                                            </div>
-                                                        </div>
-                                                        <div class="comment-content">
-                                                            <div class="comment-author">
-                                                                <span>ماندانا راد</span>
-                                                                <p class="text-muted comment-date">21 مهر 1401 در 09:13 قبل از ظهر</p>
-                                                                <a href="#" class="comment-reply-link"><i class="fa fa-reply fa-flip-horizontal"></i> پاسخ</a>
-                                                            </div>
-                                                            <div class="comment-text">
-                                                                <span>سلام، این یک دیدگاه است. برای شروع کار با مدیریت، ویرایش و حذف نظرات، لطفاً از صفحه نظرات در داشبورد ببینید. آواتارهای نظردهنده از Gravatar می آیند.</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div class="comments-devider"></div>
-                                            <ul class="comment even thread-even depth-1 list-unstyled comments-list m-0" id="comment-2">
-                                                <li id="div-comment-2" class="p-3">
-                                                    <div class="comment-wrap">
-                                                        <div class="comment-image float-start">
-                                                            <div class="commnet-image-border">
-                                                                <img alt="/" src="assets/img/man.png" class="avatar avatar-65 photo" height="65" width="65">
-                                                            </div>
-                                                        </div>
-                                                        <div class="comment-content">
-                                                            <div class="comment-author">
-                                                                <span>محمد پناهی</span>
-                                                                <p class="text-muted comment-date">21 مهر 1401 در 09:13 قبل از ظهر</p>
-                                                                <a href="#" class="comment-reply-link"><i class="fa fa-reply fa-flip-horizontal"></i> پاسخ</a>
-                                                            </div>
-                                                            <div class="comment-text">
-                                                                <span>سلام، این یک دیدگاه است. برای شروع کار با مدیریت، ویرایش و حذف نظرات، لطفاً از صفحه نظرات در داشبورد ببینید. آواتارهای نظردهنده از Gravatar می آیند.</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div class="comments-devider"></div>
-                                            <ul class="comment even thread-even depth-1 list-unstyled comments-list m-0" id="comment-3">
-                                                <li id="div-comment-3" class="p-3">
-                                                    <div class="comment-wrap">
-                                                        <div class="comment-image float-start">
-                                                            <div class="commnet-image-border">
-                                                                <img alt="/" src="assets/img/woman-avator.png" class="avatar avatar-65 photo" height="65" width="65">
-                                                            </div>
-                                                        </div>
-                                                        <div class="comment-content">
-                                                            <div class="comment-author">
-                                                                <span>ماندانا راد</span>
-                                                                <p class="text-muted comment-date">21 مهر 1401 در 09:13 قبل از ظهر</p>
-                                                                <a href="#" class="comment-reply-link"><i class="fa fa-reply fa-flip-horizontal"></i> پاسخ</a>
-                                                            </div>
-                                                            <div class="comment-text">
-                                                                <span>سلام، این یک دیدگاه است. برای شروع کار با مدیریت، ویرایش و حذف نظرات، لطفاً از صفحه نظرات در داشبورد ببینید. آواتارهای نظردهنده از Gravatar می آیند.</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
                                         <!--Blog Reply-->
                                         <div class="contact mt-4">
                                             <div class="contact-form">
@@ -167,20 +82,7 @@
                                         </form>
                                     </div>
                                     <!-- Recent Posts -->
-                                    <div class="aside-contents">
-                                        <div class="aside-title">
-                                            <span class="base-color">نوشته های اخیر</span>
-                                        </div>
-                                        <div class="aside-item">
-                                            <ul class="list-unstyled mb-0">
-                                                <li><i class="fa fa-circle-o base-color"></i><a href="#">بهترین خودت باش</a></li>
-                                                <li><i class="fa fa-circle-o base-color"></i><a href="#"> 5 نکته در طراحی UI/UX</a></li>
-                                                <li><i class="fa fa-circle-o base-color"></i><a href="#">رویاهات رو بنویس</a></li>
-                                                <li><i class="fa fa-circle-o base-color"></i><a href="#">یادگیری HTML5 و CSS3 در 5 روز</a></li>
-                                                <li><i class="fa fa-circle-o base-color"></i><a href="#">کدام بهتر است؟ React یا Vue؟</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    {% latest_blog %}
                                     <!-- Categories -->
                                     <div class="aside-contents">
                                         <div class="aside-title">

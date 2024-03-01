@@ -1,6 +1,7 @@
 {% extends 'parent/base.html' %}
 {% load static %}
 {% load jformat %}
+{% load weblog_tags %}
 {% block title %}اخرین بلاک ها{% endblock %}
 {% block content %}
 
@@ -79,20 +80,7 @@
                     </form>
                 </div>
                 <!-- Recent Posts -->
-                <div class="aside-contents">
-                    <div class="aside-title">
-                        <span class="base-color">نوشته های اخیر</span>
-                    </div>
-                    <div class="aside-item">
-                        <ul class="list-unstyled mb-0">
-                            <li><i class="fa fa-circle-o base-color"></i><a href="#">بهترین خودت باش</a></li>
-                            <li><i class="fa fa-circle-o base-color"></i><a href="#"> 5 نکته در طراحی UI/UX</a></li>
-                            <li><i class="fa fa-circle-o base-color"></i><a href="#">رویاهات رو بنویس</a></li>
-                            <li><i class="fa fa-circle-o base-color"></i><a href="#">یادگیری HTML5 و CSS3 در 5 روز</a></li>
-                            <li><i class="fa fa-circle-o base-color"></i><a href="#">کدام بهتر است؟ React یا Vue؟</a></li>
-                        </ul>
-                    </div>
-                </div>
+                {% latest_blog %}
                 <!-- Categories -->
                 <div class="aside-contents">
                     <div class="aside-title">

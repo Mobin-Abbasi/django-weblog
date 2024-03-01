@@ -1,0 +1,13 @@
+<!-- Recent Posts -->
+<div class="aside-contents">
+    <div class="aside-title">
+        <span class="base-color">نوشته های اخیر</span>
+    </div>
+    <div class="aside-item">
+        <ul class="list-unstyled mb-0">
+            {% for blog in l_blog %}
+            <li><i class="fa fa-circle-o base-color"></i><a href="{{ blog.get_absolute_url }}">{{ blog.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
