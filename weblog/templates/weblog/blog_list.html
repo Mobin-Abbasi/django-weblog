@@ -40,10 +40,6 @@
                                                 <i class="lni-calendar data-text-color" data-color="#ff5380"></i>
                                                 <span class="text-muted">{{ blog.created | jformat:'%Y/%m/%d'}} </span>
                                             </li>
-                                            <li class="list-inline-item">
-                                                <i class="lni-comment data-text-color" data-color="#fbdd62"></i>
-                                                <span class="text-muted">5</span>
-                                            </li>
                                         </ul>
                                         <h6 class="mb-3"><a class="text-dark" href="{% url 'weblog:blog_detail' blog.id %}">{{ blog.title }}</a></h6>
                                         <p class="text-dark">{{ blog.description | truncatewords:20 }}</p>
