@@ -3,13 +3,26 @@ from .models import *
 from django.http import HttpResponse
 from django.views.decorators.http import require_POST
 from .forms import *
+from django.core.mail import send_mail
 
 
 # Create your views here.
 
 
 def index(request):
-    return render(request, 'weblog/index.html')
+    if request.method == "POST":
+        form = TicketForm(request.POST)
+        if form.is_valid():
+            cd = form.cleaned_data
+            message = f"{cd['name']}\n{cd['email']}\n\n{cd['comments']}"
+            send_mail(cd['subject'], message, 'mobin04dev@gmail.com', ['abbasimobin1383@gmail.com'],
+                      fail_silently=False)
+    else:
+        form = TicketForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'weblog/index.html', context)
 
 
 def portfolio_list(request):

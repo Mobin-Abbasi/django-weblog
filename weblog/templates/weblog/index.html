@@ -718,7 +718,8 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 mt-5 contact-form">
-                                <form id="contactForm">
+                                <form method="post" class="contactForm">
+                                    {% csrf_token %}
                                     <div class="row">
                                         <div class="col-lg-6 form-item">
                                             <div class="input-group mb-3">
@@ -742,7 +743,9 @@
                                         </div>
                                         <div class="col-sm-12 mt-4 text-start position-relative">
                                             <div class="button-border">
-                                                <a href="javascript:void(0)" class="pill-button" id="submit-btn" onclick="sendEmail()">ارسال پیام</a>
+{#                                                <a href="javascript:void(0)" class="pill-button" id="submit-btn" onclick="sendEmail()">ارسال پیام</a>#}
+{#                                                <input type="submit" value="ارسال پیام" class="btn btn-warning" id="submit-btn">#}
+                                                  <button class="pill-button" id="submit-btn">ارسال پیام</button>
                                             </div>
                                             <div id="message" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000" >
                                                 <div class="toast-body d-inline-block"></div>

@@ -466,7 +466,7 @@ function sendEmail() {
         $.ajax({
             type: 'POST',
             data: $("#contactForm").serialize(),
-            url:  "sendEmail.php",
+            url:  "{% url 'weblog:index' %}",
             beforeSend: function() {
                 $('#submit-btn').html('<span class="spinner-border spinner-border-sm"></span> Loading..');
             },
@@ -493,7 +493,20 @@ function sendEmail() {
     }
 }
 
-
-
-
-
+// $(document).ready(function SendEmail() {
+//             $('.contactForm').submit(function (event) {
+//                 event.preventDefault();
+//                 $.ajax({
+//                     type: 'POST',
+//                     url: '{% url "weblog:index" %}',
+//                     data: $(this).serialize(),
+//                     success: function (response) {
+//                         alert('Email sent successfully!');
+//
+//                     },
+//                     error: function (response) {
+//                         alert('Error: ' + JSON.stringify(response.responseJSON.errors));
+//                     }
+//                 });
+//             });
+//         });
