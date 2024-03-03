@@ -1,0 +1,62 @@
+{% load static %}
+{% load jformat %}
+<!-- Portfolio Single Modal Start -->
+<div class="portfolio-single modal fade" id="portfolio-single-{{ portfolio_id }}" tabindex="-1" role="dialog" aria-labelledby="portfolioModalScrollable" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content text-muted">
+            <div class="modal-header">
+                <h5 class="modal-title text-dark" id="portfolioModalScrollable">کارهای من</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="pt-4 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-10 mx-auto">
+                                <div class="text-center">
+                                    <h2 class="mb-3">{{ portfolio.title }}</h2>
+                                </div>
+                                <div class="row contact-info mt-5">
+                                    <div class="col-md-4">
+                                        <div class="text-center">
+                                            <div>
+                                                <h6>ساخته شده توسط :</h6>
+                                                <p class="mb-0">{{ portfolio.author.get_full_name}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 p-title-border mt-3 mt-md-0">
+                                        <div class="text-center">
+                                            <div>
+                                                <h6 class="contact_detail-title">تاریخ اتمام پروژه :</h6>
+                                                <p class="mb-0">{{ portfolio.project_completion | jformat:'%Y/%m/%d'}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-3 mt-md-0">
+                                        <div class="text-center">
+                                            <div>
+                                                <h6>مهارت ها:</h6>
+                                                <p class="mb-0">{{ portfolio.skills }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <div class="portfolio-single-item image-border">
+                                        <img src="{{ portfolio.portfolio_images.first.image.url }}" class="d-block" alt="{{ portfolio.portfolio_images.first.title }}">
+                                    </div>
+                                </div>
+                                <div class="text-md-start mt-5">
+                                    <p class="my-3">{{ portfolio.description | linebreaks }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  Portfolio Single Modal End  -->

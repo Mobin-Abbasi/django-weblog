@@ -9,7 +9,13 @@ from .forms import *
 
 
 def index(request):
-    return render(request, 'weblog/index.html')
+    portfolios = Portfolio.objects.all()
+    blogs = Blog.objects.all()
+    context = {
+        'portfolios': portfolios,
+        'blogs': blogs,
+    }
+    return render(request, 'weblog/index.html', context)
 
 
 def portfolio_list(request):
