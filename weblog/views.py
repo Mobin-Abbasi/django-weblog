@@ -10,6 +10,8 @@ from django.core.mail import send_mail
 
 
 def index(request):
+    portfolios = Portfolio.objects.all()
+    blogs = Blog.objects.all()
     if request.method == "POST":
         form = TicketForm(request.POST)
         if form.is_valid():
@@ -20,7 +22,9 @@ def index(request):
     else:
         form = TicketForm()
     context = {
-        'form': form
+        'portfolios': portfolios,
+        'blogs': blogs,
+        'form': form,
     }
     return render(request, 'weblog/index.html', context)
 
